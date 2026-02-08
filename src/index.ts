@@ -4,7 +4,7 @@ import { cors } from 'hono/cors'
 const app = new Hono()
 
 app.use(
-  '/api2/*',
+  '/',
   cors({
     origin: (origin) => (origin.endsWith('.laddge.net') ? origin : 'null')
   })
